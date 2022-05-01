@@ -51,11 +51,7 @@
                             ><i class="fas fa-home"></i> Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ (request()->is('hotels')) ? 'active' : '' }}" href="{{url('hotels')}}"
-                            ><i class="fas fa-hotel"></i> Hoteles</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {{ (request()->is('hotels')) ? 'active' : '' }}" href="#/"
+                        <a class="nav-link {{ (request()->is('routes')) ? 'active' : '' }}" href="#/"
                             ><i class="fas fa-route"></i> Circuitos</a>
                     </li>
                     <li class="nav-item">
