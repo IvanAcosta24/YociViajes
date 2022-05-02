@@ -19,3 +19,5 @@ Route::get('/', function () {
 
 Route::view('master','layouts.master');
 Route::view('family','pages.family');
+Route::view('couple','pages.couple');
+Route::view('luxury','pages.luxury');
