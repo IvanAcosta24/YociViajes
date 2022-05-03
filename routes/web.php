@@ -27,7 +27,7 @@ Route::view('cheap', 'pages.cheap')->name('cheap');
 
 
 
-
+Route::view('about-us', 'pages.about-us')->name('about-us');
 
 
 
