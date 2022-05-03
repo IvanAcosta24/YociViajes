@@ -17,10 +17,11 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::view('master', 'layouts.master');
-Route::view('family', 'pages.family');
-Route::view('couple', 'pages.couple');
-Route::view('luxury', 'pages.luxury');
+Route::view('master', 'layouts.master')->name('master');
+Route::view('family', 'pages.family')->name('family');
+Route::view('couple', 'pages.couple')->name('couple');
+Route::view('luxury', 'pages.luxury')->name('luxury');
+Route::view('honeymoon', 'pages.honeymoon')->name('honeymoon');
 
 
 
