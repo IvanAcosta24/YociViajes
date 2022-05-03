@@ -23,6 +23,8 @@ Route::view('couple', 'pages.couple')->name('couple');
 Route::view('luxury', 'pages.luxury')->name('luxury');
 Route::view('honeymoon', 'pages.honeymoon')->name('honeymoon');
 
+Route::view('cheap', 'pages.cheap')->name('cheap');
+
 
 
 
