@@ -76,7 +76,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ (request()->is('about-us')) ? 'active' : '' }}" href="{{url('about-us')}}"
-                            data-section="menu" data-value="cheap"><i class="fas fa-info"></i> Acerca de</a>
+                            data-section="menu" data-value="cheap"><i class="fas fa-info"></i> Nosotros</a>
                     </li>
                     @if(Route::has('login'))
                         @auth

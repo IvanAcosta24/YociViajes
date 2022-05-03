@@ -24,7 +24,7 @@ Route::view('luxury', 'pages.luxury');
 
 
 
-
+Route::view('about-us', 'pages.about-us')->name('about-us');
 
 
 
