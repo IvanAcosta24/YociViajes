@@ -22,6 +22,8 @@ Route::view('family', 'pages.family');
 Route::view('couple', 'pages.couple');
 Route::view('luxury', 'pages.luxury');
 
+Route::view('cheap', 'pages.cheap')->name('cheap');
+
 
 
 
