@@ -76,37 +76,8 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ (request()->is('about-us')) ? 'active' : '' }}" href="{{url('about-us')}}"
-                            data-section="menu" data-value="cheap"><i class="fas fa-info"></i> Acerca de</a>
+                            data-section="menu" data-value="cheap"><i class="fas fa-info"></i> Nosotros</a>
                     </li>
-                    @if(Route::has('login'))
-                        @auth
-                            <li class="nav-item dropdown" id="profile">
-                                <a class="nav-link" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
-                                    href="#">
-                                    <i class="fas fa-user-circle"></i>
-                                    ¡<span class="saludo">{{ __('Hi') }}</span><span>{{ Auth::user()->name }}!</span> <i class="fas fa-caret-down"></i></a>
-
-                                <ul class="dropdown-menu animate slideIn" style="margin-top:2px;padding:10px;width:100%">
-                                    <li  style="display: none"><a class="nav-link" href="{{url('my-reservations')}}"><i class="fas fa-suitcase-rolling"></i> {{ __('My reservations') }}</a></li>
-                                    <li>
-                                        <a class="nav-link" href="{{url('user/profile')}}"><i class="fas fa-user"></i> {{ __('Profile') }}</a>
-                                    </li>
-                                    <li><a class="nav-link" href="{{ route('logout') }}"
-                                        onclick="event.preventDefault();
-                                                                                                                                                                                                                                                                                                                                            document.getElementById('logout-form').submit();">
-                                        <i class="fas fa-sign-out-alt"></i> {{ __('Logout') }} </a>
-                                        <form method="POST" id="logout-form" action="{{ route('logout') }}">
-                                            @csrf
-                                        </form>
-                                    </li>
-                                </ul>
-                            </li>
-                        @else   
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{url('login')}}"><i class="fas fa-user-circle"></i> {{ __('Login') }}</a>
-                            </li>
-                        @endif
-                    @endif
                 </ul>
             </div>
         </div>
