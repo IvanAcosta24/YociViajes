@@ -9,7 +9,6 @@
     {{-- css --}}
     <link rel="stylesheet" href="{{ asset('css/libs/b5/bootstrap.min.css') }}">
     {{-- icons --}}
-
     <link rel="stylesheet" href="{{ asset('css/libs/icons/all.min.css') }}">
     <style>
         body {
@@ -46,7 +45,6 @@
 </head>
 
 <body>
-
     <div class="container w-75 bg-dark rounded shadow">
         <div class="row align-items-stretch">
             <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded shadow">
