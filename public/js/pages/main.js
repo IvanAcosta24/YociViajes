@@ -92,3 +92,39 @@ var swiper = new Swiper(".topD", {
         }
     }
 });
+
+// slider
+var swiper = new Swiper(".circuite", {
+    slidesPerView: 1,
+    spaceBetween: 100,loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints: {
+        200:{
+            slidesPerView: 1,
+        },
+        300:{
+            
+            slidesPerView: 1,
+        },
+        620:{
+            slidesPerView: 1,
+        },
+        690:{
+            slidesPerView: 1,
+        },
+        920:{
+            slidesPerView: 1,
+        },
+        1240:{
+            slidesPerView: 1,
+        }
+    }
+});
