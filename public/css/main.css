@@ -20,6 +20,7 @@
     --bg-color-gray: #e2e2e2;
     --bg-color-btn-green:#00ca47;
     --bg-color-danger:#ff2600;
+    --text-gray: rgb(175, 175, 175);
     
 
     /* darkmode */
@@ -68,6 +69,75 @@ a:hover {
 /* **hotels */
 .content-hotels{
     margin-top:-70px;
+}
+
+/* **Circuito */
+.circuito {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circuito figure {
+    overflow: hidden;
+    width: 700px;
+    height: 500px;
+    margin-left: -400px;
+    border-radius:5px;
+}
+
+.circuito figure img {
+    width: 100%;
+    height: 500px;
+    border-radius:5px;
+    transition: .3s ease all;
+}
+
+.circuito .card{
+    position: absolute;
+    width: 500px;
+    right:100px;
+    top: 50px;
+    padding: 30px 30px;
+    border: none;
+    box-shadow: 0 2px 2px rgb(0 0 0 / 20%);
+}
+
+.circuito .card p{
+    margin-bottom: 0px;
+}
+
+.circuito .card .title__circuite{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight:bold;
+    margin-bottom: 15px;
+}
+
+.circuito .card .description__circuite{
+    font-size:15px;
+    text-align: justify;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--text-gray);
+}
+
+.circuito .card .cotizar{
+    text-decoration: none;
+    background-color: var(--color-primary);
+    padding: 10px 5px;
+    margin-top: 30px;
+    color: var(--color-text-dm);
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: .3s ease all;
+}
+
+.circuito .card .cotizar:hover{
+    background-color: var(--color-primary-hover);
 }
 
 
@@ -2435,6 +2505,14 @@ body.dark #result__hotel .hotel__detalles .history .title-history{
     color: #fff;
 }
 
+body.dark .swiper-pagination-bullet {
+    background: #00c2cb;
+}
+
+body.dark .circuito .card{
+    background-color:var(--bg-dark-section)
+}
+
 /* **responsive */
 @media screen and (max-width: 1200px){
     .hotels .tabs__container article .card{
@@ -2448,6 +2526,16 @@ body.dark #result__hotel .hotel__detalles .history .title-history{
 
     #profile img{
         display:none;
+    }
+
+    .circuito figure {
+        width: 700px;
+        margin-left: -200px;
+    }
+    
+    .circuito .card{
+        width: 500px;
+        right:20px;
     }
 }
 
@@ -2483,6 +2571,26 @@ body.dark #result__hotel .hotel__detalles .history .title-history{
     #result__hotel .hotels__result .card a{
         position: relative;
         bottom: auto;
+    }
+
+    .circuito{
+        justify-content: center;
+    }
+
+    .circuito figure {
+        width: 100%;
+        margin-left: 0px;
+        height: 650px
+    }
+
+    .circuito figure img{
+        height: 400px;
+    }
+    
+    .circuito .card{
+        width: 94%;
+        /* right:0px; */
+        top: 300px;
     }
 }
 
@@ -2721,6 +2829,30 @@ body.dark #result__hotel .hotel__detalles .history .title-history{
         position:  relative !important;
         bottom: auto;
     }
+
+    .circuito figure {
+        width: 100%;
+        margin-left: 0px;
+        height: 760px
+    }
+
+    .circuito figure img{
+        height: 400px;
+    }
+    
+    .circuito .card{
+        width: 92%;
+        /* right:0px; */
+        top: 300px;
+    }
+
+    .circuite .swiper-button-next{
+        display: none !important;
+    }
+
+    .circuite .swiper-button-prev{
+        display: none !important;
+    }
 }
 
 @media screen and (max-width: 566px) {
@@ -2859,6 +2991,42 @@ body.dark #result__hotel .hotel__detalles .history .title-history{
 
     #result__hotel .preview-box .img-box{
         height: 350px;
+    }
+
+    .circuito .card{
+        width: 100%;
+        right:0px;
+        top: 300px;
+    }
+
+    .circuito figure {
+        width: 100%;
+        margin-left: 0px;
+        height: 790px
+    }
+}
+
+@media screen and (max-width:450px){
+    
+
+    .circuito figure {
+        width: 100%;
+        margin-left: 0px;
+        height: 860px
+    }
+}
+
+@media screen and (max-width:390px){
+    .circuito figure {
+        width: 100%;
+        margin-left: 0px;
+        height: 900px
+    }
+
+    .circuito .card{
+        width: 100%;
+        right:0px;
+        top: 300px;
     }
 }
 

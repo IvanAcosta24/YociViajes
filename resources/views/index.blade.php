@@ -51,7 +51,7 @@
                             ><i class="fas fa-home"></i> Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ (request()->is('routes')) ? 'active' : '' }}" href="#/"
+                        <a class="nav-link {{ (request()->is('routes')) ? 'active' : '' }}" href="{{url('routes')}}"
                             ><i class="fas fa-route"></i> Circuitos</a>
                     </li>
                     <li class="nav-item">
