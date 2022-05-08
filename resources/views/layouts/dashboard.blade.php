@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dashboard</title>
+    {{-- TOKEN PARA CAMBIOS --}}
+    <meta name="csrf-token" id="token" value="{{ csrf_token() }}">
+    {{-- META PARA RUTA DINAMICA --}}
+    <meta name="route" id="route" value="{{ url('/') }}">
 
     {{-- styles --}}
     <link rel="stylesheet" href="{{ asset('css/libs/b5/bootstrap.min.css') }}">
@@ -35,14 +39,14 @@
                     {{-- <span class="profession">Web developer</span> --}}
                 </div>
             </div>
-            <i class='bx bx-chevron-right toggle'></i>
+            <i class="fas fa-chevron-circle-right toggle"></i>
         </header>
 
         <div class="menu-bar">
             <div class="menu">
                 <ul class="menu-links p-0">
                     <li class="">
-                        <a href="#">
+                        <a href="{{ url('flyers') }}">
                             <i class="fas fa-file-upload icon"></i>
                             <span class="text nav-text">Flyers</span>
                         </a>
@@ -51,7 +55,7 @@
             </div>
             <div class="bottom-content">
                 <li class="">
-                    <a href="#">
+                    <a href="{{ url('logout') }}">
                         <i class="fas fa-sign-out-alt icon"></i>
                         <span class="text nav-text">Logout</span>
                     </a>
@@ -73,11 +77,7 @@
 
     <section class="home">
         <div class="container">
-            <div class="card">
-                <div class="card-body">
-                    <h1>Hoa</h1>
-                </div>
-            </div>
+            @yield('contenido')
         </div>
     </section>
 

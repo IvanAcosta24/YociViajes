@@ -29,7 +29,7 @@ class UserController extends Controller
     }
     public function authenticated()
     {
-        return redirect('welcome');
+        return redirect('flyers');
     }
     public function logout(Request $request)
     {

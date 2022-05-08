@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\FlyerController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,11 +32,20 @@ Route::view('routes', 'pages.routes')->name('routes');
 
 
 
+//admin
+Route::middleware(['auth'])->group(function () {
+    Route::view('flyers', 'admin.flyers')->name('flyers');
+});
 
-Route::view('dashboard', 'layouts.dashboard')->name('dashboard');
+// flyer controller
+Route::get('/getFlyer', [FlyerController::class, 'index']);
+Route::post('/saveFlyer', [FlyerController::class, 'store']);
+Route::delete('/deleteFlyer/{id}', [FlyerController::class, 'destroy']);
+
+//login - register view
 Route::view('login', 'auth.login')->name('login');
 Route::view('register', 'auth.register')->name('register');
-
+//login - register controller
 Route::post('register', [UserController::class, 'register'])->name('register');
 Route::post('login', [UserController::class, 'log_in'])->name('login');
 Route::get('logout', [UserController::class, 'logout'])->name('logout');
