@@ -94,6 +94,38 @@ var swiper = new Swiper(".topD", {
 });
 
 // slider
+var swiper = new Swiper(".flayers", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+
+    breakpoints: {
+        200:{
+            slidesPerView: 1,
+        },
+        300:{
+            
+            slidesPerView: 1,
+        },
+        620:{
+            slidesPerView: 2,
+        },
+        690:{
+            slidesPerView: 2,
+        },
+        920:{
+            slidesPerView: 3,
+        },
+        1240:{
+            slidesPerView: 4,
+        }
+    }
+});
+
+// slider
 var swiper = new Swiper(".circuite", {
     slidesPerView: 1,
     spaceBetween: 100,loop: true,
