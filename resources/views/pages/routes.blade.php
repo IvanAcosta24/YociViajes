@@ -42,7 +42,7 @@
                                                 experiencia.
 
                                             </p>
-                                            <a href="" class="cotizar">Quiero cotizar</a>
+                                            <a href="{{url('quote')}}" class="cotizar">Quiero cotizar</a>
                                         </div>
                                         <figure>
                                             <img src="img/train-chepe.jpg" alt="chiuauua">

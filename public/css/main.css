@@ -2203,6 +2203,68 @@ margin-left: 0px;
     background-color: var(--color-primary-hover);
 }
 
+/* *** FORMULARIO Cotización */
+.contain__form{
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start
+}
+
+.contain__form .card{
+    width: 40%;
+    padding:30px 30px;
+    margin-top: 30px ;
+    margin-bottom: 30px;
+}
+
+.contain__form .card h2{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contain__form .card .instructor{
+    color: #878787;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contain__form .card .form-label{
+    text-transform: uppercase;
+}
+
+.contain__form .card input{
+    height:60px;
+    background-color: #fff;
+    border-radius: 0px;
+    border: solid 1px #878787;
+}
+
+.contain__form .card textarea{
+    background-color: #fff;
+    border-radius: 0px;
+    border: solid 1px #878787;
+    padding: 10px 10px;
+}
+
+.contain__form .card .ast{
+    color: var(--color-start)
+}
+
+.contain__form .card .btn__cotizar{
+    background-color: var(--color-primary);
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+
+.contain__form .card .btn__cotizar:hover{
+    background-color: var(--color-primary-hover)
+}
+
 /* **BOTON CONFIG */
 .config-dropdown{
     width: 56px;
@@ -2513,6 +2575,20 @@ body.dark .circuito .card{
     background-color:var(--bg-dark-section)
 }
 
+body.dark .contain__form .card{
+    background-color: var(--bg-dark-section)
+}
+
+body.dark .contain__form .card input{
+    background-color: var(--bg-dark-section);
+    color: #fff;
+}
+
+body.dark .contain__form .card textarea{
+    background-color: var(--bg-dark-section);
+    color: #fff;
+}
+
 /* **responsive */
 @media screen and (max-width: 1200px){
     .hotels .tabs__container article .card{
@@ -2591,6 +2667,10 @@ body.dark .circuito .card{
         width: 94%;
         /* right:0px; */
         top: 300px;
+    }
+
+    .contain__form .card{
+        width: 60%;
     }
 }
 
@@ -2753,6 +2833,10 @@ body.dark .circuito .card{
         display:none;
     }
 
+    .contain__form .card{
+        width: 60%;
+    }
+
 }
 
 @media screen and (max-width:768px) {
@@ -2853,6 +2937,10 @@ body.dark .circuito .card{
     .circuite .swiper-button-prev{
         display: none !important;
     }
+
+    .contain__form .card{
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 566px) {
@@ -2935,6 +3023,10 @@ body.dark .circuito .card{
     #result__hotel .preview-box .img-box{
         height: 400px;
     }
+
+    .contain__form .card{
+        width: 70%;
+    }
 }
 
 @media screen and (max-width:501px) {
@@ -3003,6 +3095,10 @@ body.dark .circuito .card{
         width: 100%;
         margin-left: 0px;
         height: 790px
+    }
+
+    .contain__form .card{
+        width: 90%;
     }
 }
 
