@@ -28,7 +28,7 @@ Route::view('about-us', 'pages.about-us')->name('about-us');
 Route::view('routes', 'pages.routes')->name('routes');
 
 
-
+Route::view('quote','pages.quote')->name('quote');
 
 
 
